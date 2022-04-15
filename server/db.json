@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "name": "Lindy",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/01/26/12/20220126124529.png"
+    },
+    {
+      "id": 2,
+      "name": "Tinker",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/03/11/11/20220311113553_0.png"
+    },
+    {
+      "id": 3,
+      "name": "Ginger",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/04/07/13/20220407130015.png"
+    },
+    {
+      "id": 4,
+      "name": "Bonnie",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/04/12/14/20220412145459.png"
+    },
+    {
+      "id": 5,
+      "name": "Clo",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/03/23/08/20220323080646.png"
+    },
+    {
+      "id": 6,
+      "name": "Link",
+      "gender": "female",
+      "cuddleability": 3,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/02/10/12/20220210120416.png"
+    },
+    {
+      "id": 7,
+      "name": "Poppy",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/04/06/14/20220406142511.png"
+    },
+    {
+      "id": 8,
+      "name": "Mini",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/04/07/20/20220407201035.png"
+    },
+    {
+      "id": 9,
+      "name": "Bigsy",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/03/30/14/20220330141648.png"
+    },
+    {
+      "id": 10,
+      "name": "Jinks",
+      "gender": "female",
+      "cuddleability": 5,
+      "breed": "mix",
+      "imageURL" : "https://www.shelterluv.com/sites/default/files/animal_pics/5953/2022/04/12/14/20220412145809.png"
+    }
+  ]

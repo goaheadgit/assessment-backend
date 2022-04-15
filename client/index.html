@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <div id="miscButtons">
+    <button id="complimentButton">Get a new compliment.</button>
+    <button id="fortuneButton">Get a new fortune.</button>
+    </div>
+    <div id="kittenIntro">
+      <h1>Love Kittens?</h1>
+      <h2>Take one home today!</h2>
+    </div>
+    <div id="newKitten">
+      <h3>Adopt</h3>
+      <button id="adoptButton">Adopt a random kitten.</button>
+      <h3>Breed a Designer Kitten</h3>
+        <form>
+          <input 
+              type='text'
+              id="name"
+              placeholder="What do you want its name to be?"/>
+          <input 
+              type='text'
+              id="img"
+              placeholder='Paste an image URL of what they should look like.'/>
+          <input 
+              type='text'
+              id="breed"
+              placeholder='What, if any, specific breed do you want?'/>
+              <section id="gender-container">
+                <p>What gender?</p>
+                <div id="radio-container">
+                    <label for="one">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Female"
+                            id="one"/>
+                        Female
+                    </label>
+                    <label for="two">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Male"
+                            id="two"/>
+                        Male
+                    </label>
+                    <label for="three">
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Surprise Me!"
+                            id="three"/>
+                        Surprise Me!
+                    </label>
+                  </div>
+                </section>
+          <section id="ratings-container">
+              <p>Give it a cuddleability score!</p>
+              <div id="radio-container">
+                  <label for="one">
+                      <input
+                          type="radio"
+                          name="cuddleability"
+                          value="1"
+                          id="one"/>
+                      1
+                  </label>
+                  <label for="two">
+                      <input
+                          type="radio"
+                          name="cuddleability"
+                          value="2"
+                          id="two"/>
+                      2
+                  </label>
+                  <label for="three">
+                      <input
+                          type="radio"
+                          name="cuddleability"
+                          value="3"
+                          id="three"/>
+                      3
+                  </label>
+                  <label for="four">
+                      <input
+                          type="radio"
+                          name="cuddleability"
+                          value="4"
+                          id="four"/>
+                      4
+                  </label>
+                  <label for="five">
+                      <input
+                          type="radio"
+                          name="cuddleability"
+                          value="5"
+                          id="five"/>
+                      5
+                  </label>
+              </div>
+          </section>
+          <button>Request From Breeder</button>
+        </form>
+      <h3>Rename Your Kittens</h3>
+    </div>
+    <div id="myKittens">
+      <h2>My Kittens</h2>
+      <section id="kitten-container"></section>
+      <h3>Abandon a Kitten</h3>
+        <p>Yikes. Who are you abandoning?</p>
+        <form>
+          <input type="text" id="abandonedKitten" name="abandonedKitten"><br>
+          <button>Abandon Kitten</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      document.getElementById("adoptKitten").onclick = function () {
+        axios.get("http://localhost:4000/api/kitten/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+  </body>
+</html>
